@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quick Start Plugin Dev</title>
+    <link href="plugin-dev.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div style="max-width: 960px">
+      <video-js
+        id="player"
+        data-account="6233314574001"
+        data-player="5gUg8kJhYE"
+        data-embed="default"
+        controls=""
+        data-video-id="6235078615001"
+        data-playlist-id=""
+        data-application-id=""
+        class="vjs-fluid"
+      ></video-js>
+    </div>
+    <script src="https://players.brightcove.net/6233314574001/5gUg8kJhYE_default/index.min.js"></script>
+    <script type="text/javascript" src="plugin-dev.js"></script>
+    <script>
+      videojs.getPlayer("player").listenForParent();
+    </script>
+  </body>
+</html>
