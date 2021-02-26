@@ -15,7 +15,10 @@ videojs.registerPlugin('listenForParent', function () {
         } else if (evt.data === 'umutePause') {
             myPlayer.muted(false);
             myPlayer.paused();
-        }   
+        } else if (evt.data === 'click') {
+            console.log('clicked');
+            document.getElementsByTagName('div')[0].click();
+        }
     };
     // Listen for the message, then call controlVideo() method when received
     window.addEventListener("message", controlVideo);
